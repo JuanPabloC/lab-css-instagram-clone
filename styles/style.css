@@ -1,10 +1,117 @@
 /*
 Colors to use:
-dark blue: #06365f
+dark blue: #06365f url('https://www.colorhexa.com/06365f.png');
 light blue: #1c5380
 */
 
+html {
+  height:100%;
+  background-color: white;
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
   margin: 0;
+  background-image: url('https://www.colorbook.io/imagecreator.php?hex=1c5380&width=1080&height=1920&text=%201080x1920');
+  background-repeat: repeat-x;
+  background-size: auto 40%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 100px 10% 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.container > div {
+  margin: 0 5px
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  flex-grow: 1;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0px 45px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.2) -20px -20px 20px -8px;
+  -moz-box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.info h1 {
+  width: 70%;
+  color: #06365f;
+  margin-bottom: 0;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 95px;
+  color: rgb(216, 215, 215);
+  background: linear-gradient(
+    #4d88b8ce 0%,
+    #1c5380 100%
+  );
+  border-radius: 2px;
+  border: 0;
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+
+.ig-logo {
+  width: 65%;
+}
+
+.footer-container {
+  color: #295981;
+  display: flex;
+  font-weight: bold;
+  font-size: small;
+  margin-top: 35px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.copy {
+  color: rgb(190, 189, 189);
+}
+
+.buttons {
+  width: 70%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#phones-images {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+#content {
+  /* flex-grow: 1; */
+  padding: 20px 30px;
+  display: flex;
+  min-width: 470px;
+  flex-direction: column;
+  justify-content: space-between;
 }
